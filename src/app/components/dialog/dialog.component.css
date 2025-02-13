@@ -1,0 +1,97 @@
+/* Overall dialog styles */
+::ng-deep .mat-dialog-container {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Dialog Title */
+  .dialog-title {
+    font-size: 28px;
+    color: #ff4f81; /* A romantic pink color */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  }
+
+  /* Dialog Content */
+  .dialog-content {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+
+  /* Dialog Actions */
+  .dialog-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Button Styling */
+  .action-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff4f81; /* Romantic pink */
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+
+  .action-button:hover {
+    background-color: #ff1f5e; /* Darker pink when hovered */
+  }
+
+  .action-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 79, 129, 0.4); /* Soft glow around button */
+  }
+
+  /* Heart Icon Styling (Optional) */
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #ff4f81; /* Matching pink */
+  }
+
+  /* Small Decorations (Hearts or Icons) */
+  .dialog-container::before {
+    content: "❤️"; /* Display heart emoji as decoration */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    opacity: 0.3;
+  }
+
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  .action-button:hover {
+    animation: bounce 0.6s infinite; /* Add a bounce effect to the button when hovered */
+  }
+  .mat-mdc-button:not(:disabled){
+    color: white !important ;
+  }

@@ -1,0 +1,74 @@
+.no-button {
+    position: absolute;
+    top: 50vh;
+    left: 60vw;
+    /* transform: translate(-50%, -50%); */
+}
+
+.yes-button {
+    position: absolute;
+    top: 50vh;
+    left:30vw;
+    animation: bounce 0.6s infinite;
+}
+
+.question {
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10vh;
+    color: rgb(255, 14, 54);
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  height: 80px;
+  width: 160px;
+  line-height: 40px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+}
+
+html {
+    background-color: papayawhip;
+}
+
+#yipee{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 1);
+    /* animation: fadeInAnimation ease 3s; */
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
